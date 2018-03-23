@@ -1,0 +1,50 @@
+html{
+    background-image: url("assets/stars.jpg"); 
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 50%;
+    background-color:rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    box-shadow: 0 0 20px #000000;
+}
+
+h1{
+    padding-top: 85px;
+    font-family: IndieFlower;
+    font-size: 500%;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font-family: IndieFlower;
+    font-size: 150%;
+    color: white;
+    text-align:center;
+}
+
+form, h3{
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+h3{
+    text-align: justify;
+    color: white;
+    font-family: "Roboto-Meduim";
+}
+
+.astrosigns{
+    display:grid;
+    width:80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.instructions{
+    padding: 60px 110px 60px 110px;
+}

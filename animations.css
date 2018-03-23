@@ -1,0 +1,31 @@
+/* animations for DrexelGQ - work-in-progress */
+
+.nav_link:hover, .nav_link:active{
+    color: #fff;
+    background: #FFC600;
+    transition: background 0.6s ease-in-out;
+}
+
+.nav_sub:hover, .nav_sub:active{
+    color: #fff;
+    background: #FFC600;
+    transition: background 0.6s ease-in-out;
+}
+
+.nav_link:active {
+    color: #fff;
+    background: #FFC600;
+}
+
+.twitter{
+background:transparent url('twitter.png') center top no-repeat;
+}
+
+.twitter:hover{
+    background-image: url('twitter_hover.png')
+}
+
+.instagram:hover{
+    background-image: url('instagram_hover.png')
+}
+

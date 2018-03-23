@@ -1,0 +1,521 @@
+/* welcome to the responsive design center */
+/* large screens bigger than 1280px. its just the normal web set-up with margins on the sides */
+@media only screen and (min-width: 1280px) {
+    html, body {
+        height: 100%;
+        box-shadow: 0 0 20px #e2e2e2;
+    }
+    
+    html {
+        display: table;
+        margin: auto;
+        background-color: #f2f2f2;
+        width:100%;
+        
+        max-width:1280px;
+    }
+
+    body{ 
+        margin: 0;
+        max-width: 1280px;
+        display: table-cell;
+        vertical-align: middle;
+        background: #f2f2f2;
+        width:100%;
+    }
+    header{
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    /* NAVIGATION */
+    .nav{
+        max-width: 1280px;
+        width:100%;
+        position: fixed;
+        overflow: hidden;
+    }
+
+    .logo{
+        height: 70px;
+    }
+
+    menu{
+        visibility: hidden;
+    }
+
+    nav ul{
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        max-width:1280px;
+        width:100%;
+    }
+
+    nav li{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .nav_link {
+        color: #000;
+        text-decoration: none;
+        margin: 0;
+        font-size: 100%;
+        
+        padding: 30px 25px 23px 25px;
+        font-family: "Mentone", sans-serif, monospace;
+    }
+    
+    .nav_sub {
+        color: #000;
+        text-decoration: none;
+        margin: 0;
+        font-size: 100%;
+        
+        padding: 30px 25px 23px 25px;
+        font-family: "Mentone", sans-serif, monospace;
+    }
+
+    /* CULTURE PAGE */
+    .culture{
+        padding-top: 80px;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "pantcuffsbig desc1"
+        "wintereditionbig desc1"
+        "retroactivebig desc1"
+        "thickthinbig desc1"
+        "colorblockingbig desc1"
+        "fratdouchebig desc1"
+        "thriftstoresbig desc1";
+    }
+
+    .wintereditionbig, .pantcuffsbig, .retroactivebig, .thickthinbig, .colorblockingbig, .fratdouchebig, .thriftstoresbig{
+        justify-self: end;
+    }
+        
+    /* INDEX PAGE */
+        .articles{  
+            display: grid;
+            background-color: rgb(0, 0, 0);
+            padding-top: 70px;
+        }
+
+        .b{
+            grid-area: 1 / 1 / span 1 / span 2;
+            width: 850px;
+        }
+
+        .feed{
+            grid-area: 1 / 3 / span 2 / span 1;
+            background-color: #fafafa;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "desc1 winteredition"
+                "colorblocking desc2"
+                "fratdouche desc3";
+            padding: 30px
+        }
+
+        .c{
+            grid-area: 2 / 1 / span 1 / span 1;
+            width: 425px;
+        }
+
+        .d{
+            grid-area: 2 / 2 / span 1 / span 1;
+            grid-row: 2;
+            width: 425px;
+        }
+
+        .newsbanner{
+            grid-area: 3 / 1 / span 1 / span 3;
+        }
+
+        img.colorblocking{
+            margin: 50px 20px;
+        }
+
+        img.winteredition{
+            margin: 10px 40px;
+        }
+
+        img.fratdouche{
+            margin: 50px 20px;
+        }
+
+        img.thriftstores{
+            margin: 50px 20px;
+        }
+        
+        .covers{
+            padding-top: 70px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+            "cover1 cover2";
+        }
+
+        .cover1, .cover2{
+            width: 70%;
+            margin: 100px 40px 100px 95px;
+            box-shadow: 0 0 20px #858585;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* smaller monitors. my laptop seems to be in this category */
+@media only screen and (max-width: 1279px) and (min-width:768px){
+    html, body {
+        height: 100%;
+    }
+    
+    html {
+        display: table;
+        margin: auto;
+        background-color: #f2f2f2;
+        width: 100%;
+    }
+
+    body{ 
+        margin: 0;
+        width: 100%;
+        display: table-cell;
+        background: #f2f2f2;
+    }
+    header{
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        height: 70px;
+    }
+    .nav{
+        width: 100%;
+        position: fixed;
+    }
+
+    .logo{
+        height: 70px;
+    }
+
+    .menu{
+        display: hide;
+    }
+
+    nav ul{
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .nav_link {
+        color: #000;
+        text-decoration: none;
+        margin: 0;
+        font-size: 100%;
+        
+        padding: 30px 25px 23px 25px;
+        font-family: "Mentone", sans-serif, monospace;
+    }
+
+    .nav_sub {
+        color: #000;
+        text-decoration: none;
+        margin: 0;
+        font-size: 100%;
+        
+        padding: 30px 25px 23px 25px;
+        font-family: "Mentone", sans-serif, monospace;
+    }
+
+    .culture{
+        width:100%;
+        padding-top: 80px;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "pantcuffsbig desc1"
+        "wintereditionbig desc1"
+        "retroactivebig desc1"
+        "thickthinbig desc1"
+        "colorblockingbig desc1"
+        "fratdouchebig desc1"
+        "thriftstoresbig desc1";
+    }
+
+    .wintereditionbig, .pantcuffsbig, .retroactivebig, .thickthinbig, .colorblockingbig, .fratdouchebig, .thriftstoresbig{
+        justify-self: end;
+    }
+        
+
+        .articles{  
+            width:100%;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .b{
+            grid-area: 1 / 1 / span 1 / span 2;
+            width:100%;
+        }
+        .c{
+            grid-area: 2 / 1 / span 1 / span 1;
+            width:100%;
+        }
+
+        .d{
+            grid-area: 2 / 2 / span 1 / span 1;
+            width:100%;
+        }
+
+        .feed{
+            grid-area: 3 / 1 / span 1 / span 2;
+            width: 100%;
+            background-color: #fafafa;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-areas: 
+                    "desc1 winteredition"
+                    "colorblocking desc1"
+                    "fratdouche desc1";
+                    padding: 15px 0px 15px 0px;
+            }
+             .colorblocking, .fratdouche, .thriftstores{
+                justify-self: end;
+            }
+            .newsbanner{
+                width:100%;
+                grid-area: 4 / 1 / span 1 / span 2;
+            }
+
+            img.winteredition{
+                margin: 0px 60px 0px 0px;
+            }
+    
+            .desc2{
+                text-align: right;
+                padding-top: 30px;
+            }
+
+        img.colorblocking{
+            margin:40px 30px 0px 0px;
+        }
+
+        img.fratdouche{
+            margin:40px 30px 0px 0px;
+        }
+
+        img.thriftstores{
+            margin:40px 30px 0px 0px;
+        }
+        
+        .covers{
+            padding-top: 70px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+            "cover1 cover2";
+        }
+
+        .cover1, .cover2{
+            width: 80%;
+            margin: 150px 10% 150px 10%;
+            box-shadow: 0 0 20px #858585;
+        }
+
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* tablet size and really small monitors. old monitors maybe. who knows */
+@media only screen and (max-width: 768px) and (min-width:320px){
+  
+    html, body {
+        height: 100%;
+    }
+    
+    html {
+        display: table;
+        margin: auto;
+        background-color: #f2f2f2;
+        width:100%;
+    }
+
+    body{ 
+        margin: 0;
+        display: table-cell;
+        vertical-align: middle;
+        background: #f2f2f2;
+        width:100%;
+    }
+    header{
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        height: 70px;
+        overflow: hidden;
+    }
+    .nav{
+        width:100%;
+        position: fixed;
+        overflow: hidden;
+    }
+
+
+    .logo{
+        height: 70px;
+    }
+
+    .menu{
+        display: show;
+    }
+
+
+    nav ul{
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        width:100%;
+        display:grid;
+        grid-template-columns: 70px 5% 196.383 5% 117.117;
+        grid-template-areas: "menu . logo . subscribe";
+    }
+
+    nav li{
+        display: inline-block;
+        vertical-align: left;
+    }
+
+    .nav_link {
+        color: #000;
+        text-decoration: none;
+        margin: 0;
+        font-size: 100%;
+        display: none;
+        padding: 30px 25px 23px 25px;
+        font-family: "Mentone", sans-serif, monospace;
+        position: absolute;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+
+    .nav_sub{
+        display:inline;
+    }
+
+    
+
+    .articles{  
+        width:100%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .b{
+        grid-area: 1 / 1 / span 1 / span 2;
+        width:100%;
+    }
+    .c{
+        grid-area: 2 / 1 / span 1 / span 1;
+        width:100%;
+    }
+
+    .d{
+        grid-area: 2 / 2 / span 1 / span 1;
+        width:100%;
+    }
+
+    .feed{
+        grid-area: 3 / 1 / span 1 / span 2;
+        width: 100%;
+        background-color: #fafafa;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                "desc1 winteredition"
+                "colorblocking desc1"
+                "fratdouche desc1";
+                padding: 15px 0px 15px 0px;
+        }
+         .colorblocking, .fratdouche, .thriftstores{
+            justify-self: end;
+        }
+        .newsbanner{
+            width:100%;
+            grid-area: 4 / 1 / span 1 / span 2;
+        }
+
+        img.winteredition{
+            margin: 0px 60px 0px 0px;
+        }
+
+        .desc2{
+            text-align: right;
+            padding-top: 30px;
+        }
+
+    img.colorblocking{
+        margin:40px 30px 0px 0px;
+    }
+
+    img.fratdouche{
+        margin:40px 30px 0px 0px;
+    }
+
+    img.thriftstores{
+        margin:40px 30px 0px 0px;
+    }
+
+    .culture{
+        width:100%;
+        padding-top: 80px;
+        margin-left: 10%;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "pantcuffsbig desc1"
+        "wintereditionbig desc1"
+        "retroactivebig desc1"
+        "thickthinbig desc1"
+        "colorblockingbig desc1"
+        "fratdouchebig desc1"
+        "thriftstoresbig desc1";
+    }
+
+    
+    .wintereditionbig, .pantcuffsbig, .retroactivebig, .thickthinbig, .colorblockingbig, .fratdouchebig, .thriftstoresbig{
+        justify-self: center;
+    }
+
+    .desc1{
+        justify-self: left;
+        width: 50%;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* oh no mobile! */
+@media only screen and (max-width: 320px) and (min-width:0px){
+  
+}

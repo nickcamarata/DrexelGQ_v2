@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nick's Zodiac</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="zodiac.css">
+        <style>
+            @font-face{
+                font-family: 'IndieFlower';
+                src: url('IndieFlower.ttf');}
+            @font-face{
+            font-family: 'Roboto-Meduim';
+            src: url('Roboto-Medium.ttf');}
+        </style>
+    </head>
+    <body>
+        <div class="conent">
+        <h1>Who is my soulmate?</h1>
+        <h2>Enter your birthdate to find a match:</h2>
+
+        <form name="info">
+                
+                <select name="month">
+                <option value="x">Month</option>
+                <option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option>
+                <option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option>
+                <option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option>
+                <option value="10">Oct</option><option value="11">Nov</option>
+                <option value="12">Dec</option></select>
+                
+                <input type="text" name="date" value="day" size="3" onClick=value=""></td>
+                <input type="text" size="6" name="year" value="Year" onClick=value="">
+
+                <input type="button" value="Search the Cosmos" onClick="signs()"></div></td></tr>
+                
+                </form>
+            <center>
+            <div class="astrosigns">
+                    <img src="assets/capricorn.png" id="cap">
+                    <img src="assets/sagittarius.png">
+                    <img src="assets/scorpio.png">
+                    <img src="assets/libra.png">
+                    <img src="assets/virgo.png">
+                    <img src="assets/leo.png">
+                    <img src="assets/cancer.png">
+                    <img src="assets/gemini.png">
+                    <img src="assets/taurus.png">
+                    <img src="assets/aries.png">
+                    <img src="assets/pisces.png">
+                    <img src="assets/aquarius.png">
+                </center>
+
+                <script type="text/javascript">
+                    jQuery(function($) {$('#cap').click(capricorn())
+                    });
+                </script>
+
+                <div class="instructions">
+                    <h3>Enter a valid birthdate into the form above. Select your month from the drop-down,
+                        enter the day into the second box, and the year in the third. The month and day will
+                        go through a zodiac algorithm to determine what random person is your "soulmate." 
+                        Alternatively, you can click any sign you want to reveal the mystery match for that
+                        symbol.
+                    </h3>
+                </div>
+        </div>
+    </body>
+    <script src="zodiac.js"></script>
+</html>

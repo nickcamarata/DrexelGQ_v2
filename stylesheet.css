@@ -1,0 +1,72 @@
+/* this stylesheet is for site-wide styles that carry over, universally, between breakpoints s*/
+/* text formatting */
+h2{
+    font-family: "Mentone", sans-serif, monospace;
+    color: #272727;
+    font-size: 110%;
+    width:90%;
+}
+
+h3{
+    font-family: "Mentone", sans-serif, monospace;
+    color: #757575;
+    font-size: 90%;
+    padding: 7px 0px;
+}
+h1{
+    font-family: "Mentone", sans-serif, monospace;
+    color: #272727;
+    font-size: 150%;
+    width:90%;
+    text-align: center;
+}
+
+p{
+    color: #888888;
+    width:90%;
+}
+
+a{
+    text-decoration: none;
+}
+
+desc1{
+    width: 100%;
+}
+
+/* footer stuff */
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	width: 100%;
+	color: #797979;
+	background: #191919;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+}
+
+.social{
+    padding: 0px 0px 10px 485px;
+}
+
+/* my attempt to keep the subscribe button on small screen */
+.subscribe{
+    float:right;
+    padding: 27px;
+}
+
+/* article pages */
+.top{
+    padding-top:70px;
+    margin: 0px 260px;
+}
+
+.text{
+    padding: 10px 20% 50px 20%;
+}
+
+
+.colorblockingbigpublish, .publish{
+    float: left;
+    padding: 0px 0px 0px 0px;
+}
